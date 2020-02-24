@@ -1,0 +1,13 @@
+<html>
+    <title>Calculater</title>
+    <body>
+        <h1>Calculater</h1>
+        <form method="POST">
+        {% csrf_token %}
+        x = <input name="num_x" id="num_x"  /><br>
+        y = <input name="num_y" id="num_y"/>
+        <br><button id="calculater_button" type="submit" class="btn btn-success">Calculater</button>
+
+        </form>
+    </body>
+</html>
