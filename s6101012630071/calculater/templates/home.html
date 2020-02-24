@@ -5,9 +5,15 @@
         <form method="POST">
         {% csrf_token %}
         x = <input name="num_x" id="num_x"  /><br>
+        <select name="op" id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select><br>
         y = <input name="num_y" id="num_y"/>
         <br><button id="calculater_button" type="submit" class="btn btn-success">Calculater</button>
-
         </form>
+        result = {{result}}
     </body>
 </html>
