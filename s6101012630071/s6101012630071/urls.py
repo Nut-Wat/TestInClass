@@ -20,6 +20,5 @@ from calculater import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home_page, name='homepage'),
-    path('/result', views.home_page, name='homepage'),
 
 ]
