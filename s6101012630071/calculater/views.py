@@ -23,5 +23,5 @@ def home_page (request):
 
     else:
         result = 0
-        return render(request,'home.html',{'result': result,'showhistory':showhistory})
+        return render(request,'home.html',{'result': result,'showhistory':showhistory,})
 
