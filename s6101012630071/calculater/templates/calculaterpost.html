@@ -1,0 +1,32 @@
+<html>
+    <head>
+            <title>Calculater</title>
+            <style>
+                    table, th, td {
+                      border: 1px solid black;
+                    }
+                    </style>
+    </head>
+    
+    <body>
+        <h1>Calculater</h1>
+        <form method="POST">
+        {% csrf_token %}
+        x = <input name="num_x" id="num_x" value={{con_num}}  /><br>
+        <select name="op" id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select><br>
+        y = <input name="num_y" id="num_y"/>
+        <br><button id="calculater_button" name="cal" type="submit" class="btn btn-success">Calculater</button><br>
+        result = <p1>{{result}}</p1>
+        <br><br>
+        {{x}} {{op}} {{y}} = {{result}}
+        <br><button id="continue_button" name="conti" type="submit" class="btn btn-success">Continue_button</button>
+    </form>
+
+
+    </body>
+</html>
